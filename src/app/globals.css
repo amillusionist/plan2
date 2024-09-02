@@ -3,29 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 252, 186, 3;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 252, 186, 3;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-end-rgb: 252, 186, 3;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(180deg, rgba(94,76,62,1) 0%, rgba(176,166,156,1) 30%, rgba(245,242,235,1) 100%);
 }
-
+h2{
+    font-family: "Haigrast Serif", Sans-serif;
+    font-weight: 400;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;

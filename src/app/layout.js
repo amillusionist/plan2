@@ -1,5 +1,10 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "./style.css";
+import Header from "../../components/header";
+import TopBar from "../../components/topbar";
+import logo from "../../public/planb-logo.svg";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}><TopBar /> <Header logo="https://planb.weblexia.in/wp-content/uploads/2024/01/plan-b-logo-01-1.svg" />{children}</body>
     </html>
   );
 }
